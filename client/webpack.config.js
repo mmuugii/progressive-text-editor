@@ -22,6 +22,11 @@ module.exports = () => {
         template: "./index.html",
         title: "Progressive Editor",
       }),
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
+      }),
+      
       new WebpackPwaManifest({
         inject: true,
         name: "Progressive Editor",
