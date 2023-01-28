@@ -28,10 +28,10 @@ module.exports = () => {
       }),
       
       new WebpackPwaManifest({
+        fingerprints: false,
         inject: true,
         name: "Progressive Editor",
         short_name: "Prog Edit",
-        fingerprints: false,
         description: "You can now edit text offline!",
         background_color: "#000080",
         theme_color: "#000080",
